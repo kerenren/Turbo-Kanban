@@ -1,0 +1,52 @@
+.successAlert {
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 139%;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.86;
+}
+
+.errorAlert {
+    background: #FF7171;
+    box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.04), 0px 24px 48px rgba(44, 39, 56, 0.08);
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 139%;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.86;
+}
+
+.alertIcon {
+    width: 20%;
+    margin-right: 1rem;
+}
+
+.hvr_icon_spin {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr_icon_spin .hvr_icon {
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.hvr_icon_spin:hover .hvr_icon,
+.hvr_icon_spin:focus .hvr_icon,
+.hvr_icon_spin:active .hvr_icon {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.hvr_icon:hover , .hvr_icon_spin:hover{
+    color: yellow;
+}

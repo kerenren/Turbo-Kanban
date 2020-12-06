@@ -1,0 +1,18 @@
+.home {
+  background: #2C2738;
+  width: 100wh;
+}
+
+.welcome {
+  color: white;
+}
+
+.center {
+  margin: auto;
+  height: 100vh;
+  flex-flow: row wrap;
+}
+
+.logo {
+  width: 50%
+}

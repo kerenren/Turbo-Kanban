@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#root {
+    background: linear-gradient(90deg, rgba(44, 39, 56, 1) 0%, rgba(8, 128, 174, 1) 35%, rgba(99, 112, 125, 1) 100%);
+    min-height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color:  #f2ac57 #2c2738;
+  }
+  
+  /* Works on Chrome/Edge/Safari */
+  *::-webkit-scrollbar {
+    width: 1rem;
+  }
+  *::-webkit-scrollbar-track {
+    background: #2c2738;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #f2ac57;
+    border-radius: 20px;
+    border: 2px solid #2c2738;
+  }
+  

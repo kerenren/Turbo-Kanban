@@ -1,0 +1,128 @@
+.sweet_loading {
+    height: 100vh;
+    background-color: rgba(108, 131, 153, 0.931)
+}
+
+.logsHeader {
+    height: 5.375rem;
+    font-weight: 600;
+    font-size: 4.5rem;
+    line-height: 5.375rem;
+    color: #F6D26D;
+    font-family: 'Fira Code', monospace;
+}
+
+.headerImg {
+    width: 6rem
+}
+
+.logsContainer {
+    padding: 2rem 0;
+}
+
+.infoColor {
+    color: #9FD1A0
+}
+
+.errorColor {
+    color: #f1a5a5;
+}
+
+.warningColor {
+    color: #F2AC57;
+}
+
+ol {
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+li {
+    counter-increment: index -1;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0.3125rem;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Fira Code', monospace;
+    font-weight: normal;
+    font-size: 1rem;
+    transition: all .4s ease;
+}
+
+
+li::before {
+    content: counters(index, ".", decimal-leading-zero);
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: bold;
+    min-width: 4.375rem;
+    padding-right: 0.75rem;
+    font-variant-numeric: tabular-nums;
+    align-self: flex-start;
+    background-image: linear-gradient(to bottom, aquamarine, orangered);
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 0.5rem
+}
+
+
+li+li {
+    border-top: 0.0625rem solid rgba(255, 255, 255, 0.2);
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.24);
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(68, 68, 68, 0.6);
+    border-radius: 0.625rem;
+}
+
+.searchInput {
+    width: 60% !important;
+}
+
+
+.form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emptyContainer {
+    padding: 4rem 2rem;
+    transition: all .4s ease;
+    border-radius: 0.625rem;
+    width: 100%
+}
+
+.emptyContainer:hover,
+.emptyContainer:active,
+.emptyContainer:focus {
+    background-color: rgba(255, 255, 255, 0.233);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.815);
+    border: 0.0625rem white solid;
+}
+
+.emptyContainer h1,
+.emptyContainer img {
+    letter-spacing: 2px;
+    -webkit-transition: all 0.3s ease 0s;
+    position: relative;
+    z-index: 10;
+}
+
+.emptyContainer:hover h1,
+.emptyContainer:hover img {
+    transform: translateY(-10px);
+}
+
+.emptyContainer:hover .searchInput,
+.emptyContainer:focus .searchInput,
+.emptyContainer:active .searchInput {
+    width: calc(80%) !important;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}

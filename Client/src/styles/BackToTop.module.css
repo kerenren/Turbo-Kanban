@@ -1,0 +1,71 @@
+.scrollTop {
+    position: fixed; 
+    width: 100%;
+    bottom: 1.25rem;
+    align-items: center;
+    height: 1.25rem;
+    justify-content: flex-end;
+    z-index: 1000;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 0.5;
+    left: 45%;
+  }
+  
+  .scrollTop:hover{
+    opacity: 1;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+
+  @-webkit-keyframes hvr-icon-up {
+    0%,
+      50%,
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    25%,
+      75% {
+      -webkit-transform: translateY(-0.625rem);
+      transform: translateY(-0.625rem);
+    }
+  }
+  @keyframes hvr-icon-up {
+    0%,
+      50%,
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    25%,
+      75% {
+      -webkit-transform: translateY(-0.625rem);
+      transform: translateY(-0.625rem);
+    }
+  }
+
+  .hvrIconUp {
+    box-shadow: 0 0 0.0625rem rgba(0, 0, 0, 0);
+  }
+  .hvrIconUp .hvrIcon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .hvrIconUp:hover .hvrIcon, .hvrIconUp:focus .hvrIcon, .hvrIconUp:active .hvrIcon {
+    -webkit-animation-name: hvr-icon-up;
+    animation-name: hvr-icon-up;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  

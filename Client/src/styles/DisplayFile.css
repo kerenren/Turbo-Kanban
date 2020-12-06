@@ -1,0 +1,82 @@
+.file-display-container {
+    width: 50.3125rem;
+    margin: auto;
+}
+
+.file-status-bar {
+    width: 100%;
+    vertical-align: top;
+    margin-top: 0.625rem;
+    margin-bottom: 1.25rem;
+    position: relative;
+    line-height: 3.125rem;
+    height: 3.125rem;
+}
+
+.file-status-bar>div {
+    overflow: hidden;
+}
+
+.file-type {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    margin-top: 0.9375rem;
+    height: 1.25rem;
+    padding: 0 0.25rem;
+    border-radius: 0.125rem;
+    box-shadow: 0.0625rem 0.0625rem 0.125rem #7c9cbf;
+    color: #fff;
+    background: #0880ae;
+    text-transform: uppercase;
+}
+
+.file-name {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3.125rem;
+    color: #f2ac57;
+}
+
+.file-error {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3.125rem;
+    color: #9aa9bb;
+}
+
+.file-error-message {
+    color: #ff7171;
+}
+
+.file-success-message {
+    color: #14a38b
+}
+
+
+.file-type-logo {
+    width: 3.125rem;
+    height: 3.125rem;
+    background-size: 100%;
+}
+
+.file-size {
+    display: inline-block;
+    vertical-align: top;
+    color: #ebf4f8;
+    margin-left: 0.625rem;
+    margin-right: 0.3125rem;
+    margin-left: 0.625rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.file-remove {
+    position: absolute;
+    top: 1.25rem;
+    right: 0.625rem;
+    line-height: 0.9375rem;
+    cursor: pointer;
+    color: #ff7171;
+    margin-right: -0.625rem;
+}

@@ -1,0 +1,22 @@
+.tableContainer {
+    background-color:  rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    color: #756f86;
+    margin: 1rem 0 2rem 0;
+    font-weight: normal;
+}
+
+.tableContainer tbody {
+    transition: all .4s ease;
+}
+
+.tableContainer tbody:hover {
+    color: white;
+}
+
+.tableContainer th {
+    background-color: rgba(154, 176, 197, 0.931);
+    color: #0880ae;
+}

@@ -1,0 +1,12 @@
+.dashboard-container {
+    margin-top: 6.25rem !important;
+}
+
+.dashboard-container h3 {
+    color: #F2AC57;
+    transition: all .4s ease;
+}
+
+.dashboard-container h3:hover {
+    cursor: pointer;
+}
