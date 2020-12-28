@@ -1,4 +1,4 @@
-# Turbo Kanban built for manage Turbo bots and database with Turbo server
+# Turbo Kanban built for managing Turbo bots and database with Turbo server
 
 ## Client side
 ### Get started:
